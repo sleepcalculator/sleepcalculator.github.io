@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculate your optimal bedtime and wake time based on sleep cycles. Free sleep calculator with advanced options for better sleep quality.">
+    <meta name="keywords" content="sleep calculator, bedtime calculator, sleep cycles, wake time, sleep optimization, REM sleep">
+    <meta name="author" content="SleepCalc">
+    <meta property="og:title" content="SLEEPTIME - Optimize Your Sleep Cycles">
+    <meta property="og:description" content="Calculate perfect bedtime and wake times based on sleep science. Free sleep calculator tool.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sleeptime.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SLEEPTIME - Sleep Calculator">
+    <meta name="twitter:description" content="Calculate your optimal bedtime and wake time based on sleep cycles.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌙%3C/text%3E%3C/svg%3E">
+    <title>SLEEPTIME - Calculate Your Perfect Sleep Schedule</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Logo -->
+    <header class="header">
+        <div class="logo">
+            <div class="logo-icon">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="3"/>
+                    <path d="M15 20C15 15 20 12 25 15" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <span class="logo-text">SLEEPTIME</span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Calculator Section -->
+        <section class="calculator-section">
+            <h1 class="title">CALCULATE YOUR OPTIMAL SLEEP</h1>
+            
+            <!-- Mode Selection -->
+            <div class="mode-selector">
+                <button class="mode-btn active" data-mode="bedtime">
+                    <span class="mode-label">WAKE TIME</span>
+                    <span class="mode-desc">Find when to sleep</span>
+                </button>
+                <button class="mode-btn" data-mode="waketime">
+                    <span class="mode-label">BED TIME</span>
+                    <span class="mode-desc">Find when to wake</span>
+                </button>
+            </div>
+
+            <!-- Digital Clock Display -->
+            <div class="clock-display">
+                <div class="clock-time" id="clockTime">23:00</div>
+                <div class="clock-label">SET YOUR TIME</div>
+            </div>
+
+            <!-- Time Controls -->
+            <div class="time-controls">
+                <button class="time-btn" id="decreaseTime">
+                    <span>−</span>
+                </button>
+                <input type="time" id="timeInput" value="23:00" class="time-input">
+                <button class="time-btn" id="increaseTime">
+                    <span>+</span>
+                </button>
+            </div>
+
+            <!-- Advanced Options Toggle -->
+            <button class="advanced-toggle" id="advancedToggle">
+                <span>ADVANCED OPTIONS</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" class="toggle-icon">
+                    <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+
+            <!-- Advanced Options Panel -->
+            <div class="advanced-options" id="advancedOptions">
+                <div class="option-row">
+                    <label for="sleepCycles">Sleep Cycles (1 cycle = 90min)</label>
+                    <div class="input-group">
+                        <button class="option-btn" data-action="decrease" data-target="sleepCycles">−</button>
+                        <input type="number" id="sleepCycles" value="5" min="3" max="7">
+                        <button class="option-btn" data-action="increase" data-target="sleepCycles">+</button>
+                    </div>
+                </div>
+                <div class="option-row">
+                    <label for="fallAsleep">Time to fall asleep (min)</label>
+                    <div class="input-group">
+                        <button class="option-btn" data-action="decrease" data-target="fallAsleep">−</button>
+                        <input type="number" id="fallAsleep" value="15" min="0" max="60" step="5">
+                        <button class="option-btn" data-action="increase" data-target="fallAsleep">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Calculate Button -->
+            <button class="calculate-btn" id="calculateBtn">
+                <span>CALCULATE SLEEP TIMES</span>
+            </button>
+
+            <!-- Results Section -->
+            <div class="results" id="results">
+                <h2 class="results-title">OPTIMAL SLEEP TIMES</h2>
+                <div class="results-grid" id="resultsGrid">
+                    <!-- Results will be populated by JS -->
+                </div>
+                <div class="results-info">
+                    <p>Each time represents the end of a complete sleep cycle. Wake up feeling refreshed!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info Section -->
+        <section class="info-section">
+            <div class="info-card">
+                <h3>SLEEP CYCLES</h3>
+                <p>A complete sleep cycle lasts approximately 90 minutes. Waking up at the end of a cycle helps you feel more refreshed than waking mid-cycle.</p>
+            </div>
+            <div class="info-card">
+                <h3>OPTIMAL SLEEP</h3>
+                <p>Adults need 5-6 complete sleep cycles (7.5-9 hours) per night for optimal health and performance.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <p class="footer-credits">© 2025 SLEEPTIME. Better sleep, better life.</p>
+            </div>
+            <div class="footer-links">
+                <a href="privacy.html" class="footer-link">PRIVACY</a>
+                <span class="footer-separator">|</span>
+                <a href="terms.html" class="footer-link">TERMS</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
