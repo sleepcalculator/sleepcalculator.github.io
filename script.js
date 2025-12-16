@@ -3,6 +3,7 @@ let currentMode = "bedtime"
 let currentTime = "23:00"
 let sleepCycles = 5
 let fallAsleepTime = 15
+let currentTheme = "purple"
 
 // Elements
 const clockTime = document.getElementById("clockTime")
@@ -20,6 +21,7 @@ const fallAsleepInput = document.getElementById("fallAsleep")
 function init() {
   updateClockDisplay()
   attachEventListeners()
+  setTheme(currentTheme)
 }
 
 // Event Listeners
@@ -82,6 +84,14 @@ function attachEventListeners() {
 
   // Calculate button
   calculateBtn.addEventListener("click", calculateSleepTimes)
+
+  // Theme selection
+  document.querySelectorAll(".theme-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const color = btn.dataset.color
+      setTheme(color)
+    })
+  })
 }
 
 // Update clock display
@@ -186,5 +196,28 @@ function displayResults(times) {
   results.scrollIntoView({ behavior: "smooth", block: "nearest" })
 }
 
+// Theme functionality
+function setTheme(theme) {
+  currentTheme = theme
+  document.documentElement.setAttribute("data-theme", theme)
+
+  // Update active theme button
+  document.querySelectorAll(".theme-btn").forEach((btn) => {
+    btn.classList.remove("active")
+  })
+  document.querySelector(`[data-color="${theme}"]`).classList.add("active")
+
+  // Save to localStorage
+  localStorage.setItem("sleepCalcTheme", theme)
+}
+
+function loadSavedTheme() {
+  const savedTheme = localStorage.getItem("sleepCalcTheme")
+  if (savedTheme) {
+    setTheme(savedTheme)
+  }
+}
+
 // Initialize app
+loadSavedTheme()
 init()
