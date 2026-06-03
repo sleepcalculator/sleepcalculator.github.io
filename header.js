@@ -7,22 +7,22 @@
   const headerHTML = `
     <header class="site-header">
       <div class="container header-inner">
-        <a href="#" class="logo">
+        <a href="/" class="logo">
           <div class="logo-icon">🌙</div>
-          <span>SleepCycle<span style="color: var(--primary);">.calc</span></span>
+          <span>Sleep<span style="color: var(--primary);">Calculator</span></span>
         </a>
         
         <nav class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#calculator">Calculator</a></li>
-          <li><a href="#how-it-works">Science</a></li>
-          <li><a href="#schedule">Planner</a></li>
-          <li><a href="#tips">Tips</a></li>
-          <li><a href="#faq">FAQ</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/#calculator">Calculator</a></li>
+          <li><a href="/#how-it-works">Science</a></li>
+          <li><a href="/#schedule">Planner</a></li>
+          <li><a href="/#tips">Tips</a></li>
+          <li><a href="/#faq">FAQ</a></li>
         </nav>
         
         <div class="header-cta">
-          <a href="#calculator" class="btn btn-primary" style="padding: 10px 20px;">Try Now</a>
+          <a href="/#calculator" class="btn btn-primary" style="padding: 10px 20px;">Try Now</a>
           <button class="menu-btn" aria-label="Menu">
             <span></span>
             <span></span>
@@ -32,13 +32,13 @@
       </div>
       
       <div class="mobile-nav">
-        <a href="#home">Home</a>
-        <a href="#calculator">Calculator</a>
-        <a href="#how-it-works">Science</a>
-        <a href="#schedule">Planner</a>
-        <a href="#tips">Tips</a>
-        <a href="#faq">FAQ</a>
-        <a href="#calculator" style="color: var(--primary); font-weight: 600;">Try Now →</a>
+        <a href="/">Home</a>
+        <a href="/#calculator">Calculator</a>
+        <a href="/#how-it-works">Science</a>
+        <a href="/#schedule">Planner</a>
+        <a href="/#tips">Tips</a>
+        <a href="/#faq">FAQ</a>
+        <a href="/#calculator" style="color: var(--primary); font-weight: 600;">Try Now →</a>
       </div>
     </header>
   `;
