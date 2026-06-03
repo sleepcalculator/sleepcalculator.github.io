@@ -14,7 +14,7 @@
           <div class="footer-brand">
             <div class="footer-logo">
               <div class="footer-logo-icon">🌙</div>
-              <span class="footer-logo-text">SleepCycle.calc</span>
+              <span class="footer-logo-text">Sleep Calculator</span>
             </div>
             <p class="footer-desc">
               The science-based sleep calculator that helps you wake up refreshed 
@@ -25,39 +25,39 @@
           <div class="footer-col">
             <h4>Tools</h4>
             <ul class="footer-links">
-              <li><a href="#calculator">Sleep Cycle Calculator</a></li>
-              <li><a href="#calculator">Bedtime Calculator</a></li>
-              <li><a href="#schedule">Schedule Planner</a></li>
-              <li><a href="#sleep-debt">Sleep Debt Tracker</a></li>
-              <li><a href="#rem-sleep">REM Sleep Guide</a></li>
+              <li><a href="/#calculator">Sleep Cycle Calculator</a></li>
+              <li><a href="/#calculator">Bedtime Calculator</a></li>
+              <li><a href="/#schedule">Schedule Planner</a></li>
+              <li><a href="/#sleep-debt">Sleep Debt Tracker</a></li>
+              <li><a href="/#rem-sleep">REM Sleep Guide</a></li>
             </ul>
           </div>
           
           <div class="footer-col">
             <h4>Learn</h4>
             <ul class="footer-links">
-              <li><a href="#how-it-works">Sleep Cycles</a></li>
-              <li><a href="#tips">Sleep Hygiene</a></li>
-              <li><a href="#faq">FAQ</a></li>
-              <li><a href="#about-sleep-calculator">About Sleep Science</a></li>
+              <li><a href="/#how-it-works">Sleep Cycles</a></li>
+              <li><a href="/#tips">Sleep Hygiene</a></li>
+              <li><a href="/#faq">FAQ</a></li>
+              <li><a href="/#about-sleep-calculator">About Sleep Science</a></li>
             </ul>
           </div>
           
           <div class="footer-col">
             <h4>Resources</h4>
-            <ul class="footer-links">
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Research</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Use</a></li>
+            <ul class="footer-links">              
+              <li><a href="about">About</a></li>
+              <li><a href="contact">Contact</a></li>
+              <li><a href="privacy">Privacy Policy</a></li>
+              <li><a href="terms">Terms of Use</a></li>
+              <li><a href="cookies">Cookies Policy</a></li>
             </ul>
           </div>
         </div>
         
         <div class="footer-bottom">
           <div class="footer-copyright">
-            © ${currentYear} SleepCycle.calc — Smart Sleep for Everyone
+            © ${currentYear} Sleep Calculator — Smart Sleep for Everyone
           </div>
           <div class="footer-disclaimer">
             ⚕️ Medical Disclaimer: This tool provides educational information only. 
