@@ -1,73 +1,119 @@
-// Footer Component
-class Footer {
-    constructor() {
-        this.render();
-    }
+// ============================================================
+// FOOTER.JS - Dynamic Footer Component
+// ============================================================
 
-    render() {
-        const currentYear = new Date().getFullYear();
-        const footerHTML = `
-            <footer>
-                <div class="container">
-                    <div class="footer-content">
-                        <div class="footer-section">
-                            <h3>About Sleep Calculator</h3>
-                            <p>Sleep Calculator is your ultimate tool for optimizing your sleep schedule using scientifically-backed sleep cycle principles. Get the best sleep of your life.</p>
-                            <p><strong>Science-Backed Sleep Solutions</strong></p>
-                        </div>
-                        <div class="footer-section">
-                            <h3>Sleep Calculator Tools</h3>
-                            <ul>
-                                <li><a href="#hero">Sleep Schedule Calculator</a></li>
-                                <li><a href="#hero">REM Sleep Calculator</a></li>
-                                <li><a href="#hero">Bedtime Calculator</a></li>
-                                <li><a href="#hero">Wake Time Calculator</a></li>
-                                <li><a href="#hero">Sleep Cycle Calculator</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-section">
-                            <h3>Learn More</h3>
-                            <ul>
-                                <li><a href="#sleep-cycles">Understanding Sleep Cycles</a></li>
-                                <li><a href="#rem-sleep">REM Sleep Guide</a></li>
-                                <li><a href="#sleep-tips">Sleep Improvement Tips</a></li>
-                                <li><a href="#how-it-works">How Calculator Works</a></li>
-                                <li><a href="#faq">Frequently Asked Questions</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-section">
-                            <h3>Sleep Resources</h3>
-                            <ul>
-                                <li><a href="#" onclick="return false">Sleep Science Research</a></li>
-                                <li><a href="#" onclick="return false">Health Benefits Guide</a></li>
-                                <li><a href="#" onclick="return false">Sleep Hygiene Tips</a></li>
-                                <li><a href="#" onclick="return false">Bedtime Routine Guide</a></li>
-                                <li><a href="#" onclick="return false">Contact Support</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="footer-divider">
-                        <div class="footer-bottom">
-                            <p>&copy; ${currentYear} Sleep Calculator. All rights reserved. | 
-                            <a href="#" onclick="return false">Privacy Policy</a> | 
-                            <a href="#" onclick="return false">Terms of Service</a> | 
-                            <a href="#" onclick="return false">Disclaimer</a></p>
-                        </div>
-                        <div class="footer-bottom">
-                            <p>Built with 💜 for better sleep | 
-                            <strong>Sleep Calculator App</strong> - Calculate your perfect sleep schedule</p>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        `;
-
-        const footerContainer = document.getElementById('footer-container');
-        footerContainer.innerHTML = footerHTML;
-    }
-}
-
-// Initialize footer when DOM is ready
-document.addEventListener('DOMContentLoaded', () => {
-    new Footer();
-});
+(function() {
+  // Get current year for copyright
+  const currentYear = new Date().getFullYear();
+  
+  // Create footer HTML structure
+  const footerHTML = `
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <div class="footer-logo-icon">🌙</div>
+              <span class="footer-logo-text">SleepCycle.calc</span>
+            </div>
+            <p class="footer-desc">
+              The science-based sleep calculator that helps you wake up refreshed 
+              by aligning your alarm with natural 90-minute sleep cycles.
+            </p>
+          </div>
+          
+          <div class="footer-col">
+            <h4>Tools</h4>
+            <ul class="footer-links">
+              <li><a href="#calculator">Sleep Cycle Calculator</a></li>
+              <li><a href="#calculator">Bedtime Calculator</a></li>
+              <li><a href="#schedule">Schedule Planner</a></li>
+              <li><a href="#sleep-debt">Sleep Debt Tracker</a></li>
+              <li><a href="#rem-sleep">REM Sleep Guide</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-col">
+            <h4>Learn</h4>
+            <ul class="footer-links">
+              <li><a href="#how-it-works">Sleep Cycles</a></li>
+              <li><a href="#tips">Sleep Hygiene</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#about-sleep-calculator">About Sleep Science</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-col">
+            <h4>Resources</h4>
+            <ul class="footer-links">
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Research</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <div class="footer-copyright">
+            © ${currentYear} SleepCycle.calc — Smart Sleep for Everyone
+          </div>
+          <div class="footer-disclaimer">
+            ⚕️ Medical Disclaimer: This tool provides educational information only. 
+            Consult a healthcare professional for sleep disorders or medical concerns.
+          </div>
+        </div>
+      </div>
+    </footer>
+  `;
+  
+  // Insert footer into the DOM
+  const footerRoot = document.getElementById('footer-root');
+  if (footerRoot) {
+    footerRoot.innerHTML = footerHTML;
+  }
+  
+  // Add smooth scroll to footer links
+  function initFooterSmoothScroll() {
+    const footerLinks = document.querySelectorAll('.footer-links a');
+    footerLinks.forEach(link => {
+      const href = link.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = href.substring(1);
+          const targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            const headerHeight = document.querySelector('.site-header')?.offsetHeight || 80;
+            const targetPosition = targetElement.offsetTop - headerHeight;
+            window.scrollTo({
+              top: targetPosition,
+              behavior: 'smooth'
+            });
+          }
+        });
+      }
+    });
+  }
+  
+  // Add CSS for active nav link highlighting
+  function addActiveLinkStyles() {
+    const style = document.createElement('style');
+    style.textContent = `
+      .nav-links a.active, .mobile-nav a.active {
+        color: var(--primary) !important;
+      }
+      .nav-links a.active::after {
+        width: 100% !important;
+      }
+    `;
+    document.head.appendChild(style);
+  }
+  
+  // Run after footer is inserted
+  setTimeout(() => {
+    initFooterSmoothScroll();
+    addActiveLinkStyles();
+  }, 100);
+})();
