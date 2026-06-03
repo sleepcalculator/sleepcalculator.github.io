@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ENSHGPNZ23"></script>
+  <!-- Google tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ENSHGPNZ23"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -10,121 +11,123 @@
   </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Terms of Use – Sleep Calculator</title>
-  <meta name="robots" content="noindex, follow" />
-  <link rel="canonical" href="https://sleepcalculator.github.io/terms.html" />
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>Terms of Use - SleepCalculator</title>
+  <meta name="description" content="Terms of Use for SleepCalculator. Read our platform conditions, liabilities guidelines, and user expectations." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://sleepcalculator.github.io/terms" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
   <style>
-    /* Inherited design tokens from index.html */
-    :root {
-      --ink: #0a1628; --deep: #0d1b2e; --mid: #112240; --panel: #152a47;
-      --border: rgba(201,168,76,0.18); --gold: #c9a84c; --gold-dim: rgba(201,168,76,0.55);
-      --moon: #e8d5a3; --text: #d8e8f5; --soft: #7a93b0; --muted: #6a7f96;
+    /* Document Layout Styles leveraging existing theme token system */
+    .legal-hero {
+      background: linear-gradient(135deg, #eef2ff 0%, #fdf4ff 50%, #eff6ff 100%);
+      padding: 140px 0 60px;
+      text-align: center;
     }
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      background: var(--ink); color: var(--text);
-      font-family: 'DM Sans', sans-serif; font-weight: 300; line-height: 1.7;
-      min-height: 100vh; position: relative;
+    .legal-content {
+      background: var(--bg-card);
+      padding: 60px 0 96px;
     }
-
-    /* Starfield Background */
-    body::before {
-      content: ''; position: fixed; inset: 0;
-      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(74,143,168,0.08) 0%, transparent 60%);
-      z-index: 0; pointer-events: none;
+    .legal-wrapper {
+      max-width: 800px;
+      margin: 0 auto;
     }
-
-    .container { max-width: 800px; margin: 0 auto; padding: 120px 24px 80px; position: relative; z-index: 1; }
-    
-    nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 16px 0;
-      background: rgba(10,22,40,0.8); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border);
+    .legal-wrapper h2 {
+      font-size: 1.8rem;
+      margin: 40px 0 16px;
+      color: var(--text);
     }
-    .nav-inner { max-width: 1140px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; }
-    .nav-logo { text-decoration: none; color: var(--moon); font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 600; }
-
-    h1 { font-family: 'Cormorant Garamond', serif; font-size: 3rem; color: var(--moon); margin-bottom: 40px; }
-    h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: var(--gold); margin-top: 40px; margin-bottom: 15px; }
-    p { margin-bottom: 20px; color: var(--soft); }
-    
-    .disclaimer-box {
-      background: rgba(201,168,76,0.05); border: 1px solid var(--gold-dim);
-      padding: 24px; border-radius: 12px; margin: 30px 0;
+    .legal-wrapper h2:first-of-type {
+      margin-top: 0;
     }
-    .disclaimer-box h3 { color: var(--gold); margin-bottom: 10px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em; }
-
-    .back-link { display: inline-block; margin-bottom: 20px; color: var(--gold); text-decoration: none; font-size: 0.9rem; }
-    footer { padding: 40px 0; border-top: 1px solid var(--border); text-align: center; font-size: 0.8rem; color: var(--muted); }
+    .legal-wrapper p {
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+      line-height: 1.8;
+    }
+    .legal-wrapper blockquote {
+      border-left: 4px solid var(--primary);
+      background-color: var(--bg-alt);
+      padding: 16px 20px;
+      margin: 24px 0;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    }
+    .legal-wrapper blockquote p {
+      margin-bottom: 0;
+      font-style: italic;
+      color: var(--text);
+    }
+    .legal-date {
+      font-size: 0.88rem;
+      color: var(--text-light);
+      margin-bottom: 40px;
+      display: block;
+    }
   </style>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Terms of Use - Sleep Calculator",
-    "url": "https://sleepcalculator.github.io/terms.html",
-    "description": "The terms and conditions for using the Sleep Calculator website and tools.",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Sleep Calculator",
-      "url": "https://sleepcalculator.github.io/"
-    }
-  }
-  </script>
 </head>
 <body>
 
-<nav>
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">Sleep<em style="font-style:italic;color:#c9a84c">Calc</em></a>
-  </div>
-</nav>
+  <!-- Header injected by header.js -->
+  <div id="header-root"></div>
 
-<div class="container">
-  <a href="index.html" class="back-link">← Back to Calculator</a>
-  <h1>Terms of Use</h1>
-  <p>Last Updated: October 2023</p>
+  <main>
+    <section class="legal-hero">
+      <div class="container">
+        <span class="section-tag">✦ Platform Rules</span>
+        <h1>Terms of Use</h1>
+      </div>
+    </section>
 
-  <p>Welcome to <strong>Sleep Calculator</strong>. By accessing or using our website, you agree to be bound by these Terms of Use. If you do not agree with any part of these terms, you must not use our services.</p>
+    <section class="legal-content">
+      <div class="container legal-wrapper">
+        <span class="legal-date">Last Updated: June 3, 2026</span>
 
-  <div class="disclaimer-box">
-    <h3>Medical Disclaimer</h3>
-    <p>The Sleep Calculator and its related tools (Nap Calculator, Sleep Debt Tracker, etc.) are provided for <strong>informational and educational purposes only</strong>. The results are estimates based on average 90-minute sleep cycles and do not account for individual biological variations, medical conditions, or sleep disorders. This tool is <strong>not</strong> a substitute for professional medical advice, diagnosis, or treatment.</p>
-  </div>
+        <p>Welcome to SleepCalculator! These terms and conditions outline the rules and regulations for the use of SleepCalculator's Website, located at https://sleepcalculator.github.io/.</p>
+        
+        <p>By accessing this website we assume you accept these terms and conditions. Do not continue to use SleepCalculator if you do not agree to take all of the terms and conditions stated on this page.</p>
 
-  <h2>1. Use of the Service</h2>
-  <p>Sleep Calculator provides a static web-based utility to estimate sleep cycles. The service is provided "as is" and "as available." We do not guarantee the accuracy of any calculation results, as sleep requirements vary significantly between individuals.</p>
+        <h2>1. Intellectual Property Rights</h2>
+        <p>Unless otherwise stated, SleepCalculator and/or its licensors own the intellectual property rights for all material on SleepCalculator. All intellectual property rights are reserved. You may access this from SleepCalculator for your own personal use subjected to restrictions set in these terms and conditions.</p>
+        <p>You must not republish material, sell, rent, sub-license, reproduce, duplicate, copy, or redistribute content from SleepCalculator without explicit written permission.</p>
 
-  <h2>2. Intellectual Property</h2>
-  <p>All content on this website, including but not limited to the design, layout, SVG icons, and custom JavaScript logic, is the property of Sleep Calculator or its content creators and is protected by copyright laws. You may not reproduce, distribute, or create derivative works from this content without express written permission.</p>
+        <h2>2. Medical Disclaimer</h2>
+        <blockquote>
+          <p>The information, calculations, schedules, and metrics provided by SleepCalculator are intended purely for educational and optimization optimization purposes based on mathematical sleep averages. They do not constitute professional medical advice, diagnoses, or sleep pathology treatments.</p>
+        </blockquote>
+        <p>Always seek the counsel of a physician or other certified health care provider with any questions regarding chronic sleep deficiency, insomnia, sleep apnea, or other medical sleep concerns.</p>
 
-  <h2>3. User Conduct</h2>
-  <p>You agree to use the website only for lawful purposes. You are prohibited from attempting to interfere with the proper working of the site, bypassing any measures we may use to prevent or restrict access, or using automated scripts to scrape data from the service.</p>
+        <h2>3. Hyperlinking to our Content</h2>
+        <p>The following organizations may link to our Website without prior written approval: Government agencies, Search engines, News organizations, and Online directory distributors. These organizations may link to our home page or application tools so long as the link is not in any way deceptive, does not falsely imply sponsorship or endorsement, and fits within the context of the linking party's site.</p>
+        <p>We may consider and approve link requests from other types of organizations including consumer information sites, community blogs, and wellness publications. If you are interested in linking to our website, you must inform us by sending an e-mail to our platform team.</p>
 
-  <h2>4. Limitation of Liability</h2>
-  <p>In no event shall Sleep Calculator, its developers, or affiliates be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on Sleep Calculator, even if notified orally or in writing of the possibility of such damage.</p>
+        <h2>4. iFrames</h2>
+        <p>Without prior approval and written permission, you may not create frames around our Webpages that alter in any way the visual presentation or appearance of our Website.</p>
 
-  <h2>5. Third-Party Links</h2>
-  <p>Our website may contain links to third-party web sites or services that are not owned or controlled by Sleep Calculator. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party web sites or services.</p>
+        <h2>5. Content Liability</h2>
+        <p>We shall not be held responsible for any content that appears on your Website. You agree to protect and defend us against all claims that are rising on your Website. No link(s) should appear on any Website that may be interpreted as libelous, obscene or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of, any third party rights.</p>
 
-  <h2>6. Changes to Terms</h2>
-  <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms.</p>
+        <h2>6. Disclaimer of Warranties</h2>
+        <p>This Website is provided "as is," with all faults, and SleepCalculator expresses no representations or warranties, of any kind related to this Website or the materials contained on this Website. Furthermore, while we try to keep our 90-minute algorithmic cycle estimations as functional as possible, we do not warrant that the tools will be 100% accurate, continuous, or completely error-free.</p>
 
-  <h2>7. Governing Law</h2>
-  <p>These terms and conditions are governed by and construed in accordance with the laws of the jurisdiction in which the website operates, and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.</p>
-</div>
+        <h2>7. Limitation of Liability</h2>
+        <p>In no event shall SleepCalculator, nor any of its officers, directors and employees, be held liable for anything arising out of or in any way connected with your use of this Website whether such liability is under contract. SleepCalculator, including its officers, directors and employees shall not be held liable for any indirect, consequential or special liability arising out of or in any way related to your use of this Website.</p>
 
-<footer>
-  <div class="container" style="padding: 0;">
-    &copy; 2026 Sleep Calculator. Sleep smarter, not longer.
-  </div>
-</footer>
+        <h2>8. Severability & Modifications</h2>
+        <p>If any provision of these Terms is found to be invalid under any applicable law, such provisions shall be deleted without affecting the remaining provisions herein. SleepCalculator is permitted to revise these Terms at any time as it sees fit, and by using this Website you are expected to review these Terms on a regular basis.</p>
+      </div>
+    </section>
+  </main>
 
+  <!-- Footer injected by footer.js -->
+  <div id="footer-root"></div>
+
+  <script src="header.js"></script>
+  <script src="footer.js"></script>
 </body>
 </html>
