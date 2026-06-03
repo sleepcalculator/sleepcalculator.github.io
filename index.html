@@ -9,410 +9,604 @@
     gtag('js', new Date());
     gtag('config', 'G-ENSHGPNZ23');
   </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Advanced Sleep Calculator - Calculate your perfect bedtime and wake time based on sleep cycles. Get personalized sleep recommendations and improve your sleep quality.">
-    <meta name="keywords" content="sleep calculator, bedtime calculator, sleep cycle calculator, REM sleep calculator, sleep schedule calculator, sleep time calculator, sleep estimator">
-    <meta name="author" content="Sleep Calculator">
-    <meta name="theme-color" content="#667eea">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sleepcalculator.github.io">
-    <meta property="og:title" content="Sleep Calculator - Calculate Your Perfect Sleep Schedule">
-    <meta property="og:description" content="Advanced sleep calculator for optimal sleep cycles. Calculate bedtime, wake time, and improve your sleep quality.">
-    <meta property="og:image" content="https://sleepcalculator.github.io/og-image.png">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://sleepcalculator.github.io">
-    <meta property="twitter:title" content="Sleep Calculator - Calculate Your Perfect Sleep Schedule">
-    <meta property="twitter:description" content="Advanced sleep calculator for optimal sleep cycles. Calculate bedtime, wake time, and improve your sleep quality.">
-    
-    <!-- Schema Markup -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebApplication",
-        "name": "Sleep Calculator",
-        "description": "Calculate your perfect sleep schedule based on sleep cycles",
-        "url": "https://sleepcalculator.github.io",
-        "applicationCategory": "HealthApplication",
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "ratingCount": "2450"
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sleep Calculator – Bedtime & Wake-Up Time Calculator | SleepCalculator</title>
+  <meta name="description" content="Free sleep calculator to find your perfect bedtime and wake-up time based on sleep cycles. Calculate REM sleep, track sleep patterns, and optimize your rest with our sleep estimator." />
+  <meta name="keywords" content="sleep calculator, bedtime calculator, rem sleep calculator, sleep cycle calculator, sleep schedule calculator, sleep time calculator, sleep pattern calculator" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="SleepCalculator" />
+  <link rel="canonical" href="https://sleepcalculator.github.io/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sleep Calculator – Find Your Perfect Bedtime" />
+  <meta property="og:description" content="Calculate ideal sleep and wake times based on 90-minute sleep cycles. Free REM sleep calculator, bedtime planner, and sleep schedule optimizer." />
+  <meta property="og:url" content="https://sleepcalculator.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://sleepcalculator.github.io/og-image.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sleep Calculator – Bedtime & Wake-Up Time Calculator" />
+  <meta name="twitter:description" content="Find your ideal bedtime and wake time with our free sleep cycle calculator." />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Sleep Calculator",
+    "url": "https://sleepcalculator.github.io/",
+    "description": "A free sleep calculator that computes optimal bedtimes and wake-up times based on 90-minute sleep cycles, REM sleep patterns, and personalized sleep schedules.",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "featureList": [
+      "Sleep Cycle Calculator",
+      "Bedtime Calculator",
+      "Wake-Up Time Calculator",
+      "REM Sleep Calculator",
+      "Sleep Schedule Planner"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How does a sleep cycle calculator work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A sleep cycle calculator uses the average 90-minute sleep cycle duration to calculate the best times to wake up or go to sleep. It adds 14 minutes of average sleep onset time to ensure you wake up between cycles rather than during deep sleep."
         }
-    }
-    </script>
-    
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "How does a sleep cycle calculator work?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "A sleep cycle calculator uses the standard 90-minute sleep cycle model to determine optimal bedtimes and wake times, helping you wake during light sleep stages."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is REM sleep and why is it important?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "REM (Rapid Eye Movement) sleep is crucial for memory consolidation, emotional processing, and brain development. It typically accounts for 20-25% of adult sleep."
-                }
-            }
-        ]
-    }
-    </script>
-    
-    <title>Sleep Calculator - Calculate Your Perfect Sleep Schedule | Bedtime & REM Sleep Calculator</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%23667eea'>💤</text></svg>">
+      },
+      {
+        "@type": "Question",
+        "name": "How many sleep cycles do I need per night?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most adults need 5–6 complete sleep cycles per night, equating to 7.5–9 hours of sleep. Each 90-minute cycle includes light sleep, deep sleep, and REM sleep stages."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the best time to wake up?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The best time to wake up is at the end of a complete 90-minute sleep cycle. Waking mid-cycle — especially during deep sleep — causes sleep inertia, making you feel groggy."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,300&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- Header Component -->
-    <div id="header-container"></div>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Hero Section -->
-        <section class="hero" id="hero">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Calculate Your Perfect Sleep Schedule</h1>
-                    <p>Get the right amount of sleep based on your sleep cycles. Wake up refreshed, not groggy.</p>
-                </div>
-                <div class="hero-calculator">
-                    <div class="calculator-card">
-                        <div class="calculator-form">
-                            <div class="form-group">
-                                <label for="bedtime">What time do you want to <span class="highlight">go to bed?</span></label>
-                                <input type="time" id="bedtime" value="23:00">
-                            </div>
-                            <div class="form-group">
-                                <label for="wakeTime">What time do you need to <span class="highlight">wake up?</span></label>
-                                <input type="time" id="wakeTime" value="07:00">
-                            </div>
-                            <div class="button-group">
-                                <button class="btn btn-primary" onclick="calculateWakeUp()">Calculate Wake Times</button>
-                                <button class="btn btn-secondary" onclick="calculateBedTime()">Calculate Bedtimes</button>
-                            </div>
-                        </div>
-                        <div id="results-container" class="results-hidden">
-                            <div class="results-content">
-                                <h3>Optimal Sleep Schedule</h3>
-                                <div id="results" class="results-grid"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <!-- Header injected by header.js -->
+  <div id="header-root"></div>
+
+  <main>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="stars" id="stars"></div>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <span class="hero-eyebrow">✦ Science-Based Sleep Tool</span>
+          <h1>Sleep <em>Smarter</em>,<br>Wake Up <em>Better</em></h1>
+          <p class="hero-subtitle">Our free sleep calculator uses 90-minute sleep cycle science to find your perfect bedtime or wake-up time — so you always rise refreshed, never groggy.</p>
+          <div class="hero-cta-row">
+            <a href="#calculator" class="btn btn-primary">Calculate My Sleep</a>
+            <a href="#how-it-works" class="btn btn-ghost">How It Works</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><span class="stat-num">90<small>min</small></span><span class="stat-label">Per Sleep Cycle</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat"><span class="stat-num">5–6</span><span class="stat-label">Cycles Per Night</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat"><span class="stat-num">14<small>min</small></span><span class="stat-label">Avg. Fall-Asleep Time</span></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="clock-widget" id="live-clock">
+            <div class="clock-face">
+              <div class="clock-hand clock-hour" id="hour-hand"></div>
+              <div class="clock-hand clock-minute" id="minute-hand"></div>
+              <div class="clock-hand clock-second" id="second-hand"></div>
+              <div class="clock-center"></div>
             </div>
-        </section>
+            <div class="clock-label" id="clock-digital">--:-- --</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-wave">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#fff"/></svg>
+      </div>
+    </section>
 
-        <!-- Sleep Cycle Visualization Section -->
-        <section class="sleep-cycles" id="sleep-cycles">
-            <div class="container">
-                <h2>Understanding Sleep Cycles</h2>
-                <p class="section-intro">A complete sleep cycle lasts approximately 90 minutes and progresses through different sleep stages</p>
-                
-                <div class="cycles-grid">
-                    <div class="cycle-card stage-1">
-                        <div class="cycle-number">Stage 1</div>
-                        <h3>Light Sleep</h3>
-                        <p><strong>5-10 minutes</strong></p>
-                        <p>Your body begins to relax, heart rate slows, and you drift into sleep. Easy to wake up during this stage.</p>
-                    </div>
-                    <div class="cycle-card stage-2">
-                        <div class="cycle-number">Stage 2</div>
-                        <h3>Light Sleep</h3>
-                        <p><strong>20-25 minutes</strong></p>
-                        <p>Body temperature drops, muscles relax further. Sleep spindles occur—brief bursts of brain wave activity.</p>
-                    </div>
-                    <div class="cycle-card stage-3">
-                        <div class="cycle-number">Stage 3</div>
-                        <h3>Deep Sleep</h3>
-                        <p><strong>20-40 minutes</strong></p>
-                        <p>Deepest restorative sleep. Growth hormone is released, tissues repair, and immune system strengthens.</p>
-                    </div>
-                    <div class="cycle-card stage-rem">
-                        <div class="cycle-number">Stage 4</div>
-                        <h3>REM Sleep</h3>
-                        <p><strong>10-20 minutes</strong></p>
-                        <p>Dreams occur, memory consolidation happens, and brain processes emotions. Gradually increases with each cycle.</p>
-                    </div>
-                </div>
+    <!-- ===== CALCULATOR SECTION ===== -->
+    <section class="section calc-section" id="calculator">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">✦ The Calculator</span>
+          <h2>Sleep Cycle Calculator</h2>
+          <p>Choose your mode: calculate when to wake up based on bedtime, or when to sleep based on wake-up time.</p>
+        </div>
 
-                <div class="cycle-timeline">
-                    <h3>Complete 90-Minute Sleep Cycle</h3>
-                    <div class="timeline-visual">
-                        <div class="timeline-stage" style="width: 8%; background: linear-gradient(135deg, #FF6B9D, #C06C84);" title="Stage 1: 5-10 min"></div>
-                        <div class="timeline-stage" style="width: 22%; background: linear-gradient(135deg, #FF6B9D, #FFA07A);" title="Stage 2: 20-25 min"></div>
-                        <div class="timeline-stage" style="width: 30%; background: linear-gradient(135deg, #667eea, #764ba2);" title="Stage 3: 20-40 min"></div>
-                        <div class="timeline-stage" style="width: 17%; background: linear-gradient(135deg, #F093FB, #F5576C);" title="REM: 10-20 min"></div>
-                        <div class="timeline-stage" style="width: 23%; background: linear-gradient(135deg, #4FACFE, #00F2FE);" title="Light Sleep: Return to stages 1-2"></div>
-                    </div>
-                    <p class="timeline-note">Complete cycles repeat multiple times throughout the night. Typically 4-6 cycles in 7-9 hours of sleep.</p>
+        <div class="calc-card">
+          <div class="calc-tabs">
+            <button class="calc-tab active" data-mode="bedtime">
+              <span class="tab-icon">🌙</span> I want to wake up at…
+            </button>
+            <button class="calc-tab" data-mode="waketime">
+              <span class="tab-icon">☀️</span> I want to sleep at…
+            </button>
+            <button class="calc-tab" data-mode="now">
+              <span class="tab-icon">⏱</span> Sleep right now
+            </button>
+          </div>
+
+          <div class="calc-body">
+            <!-- Mode: Wake-up time given -->
+            <div class="calc-panel active" id="panel-bedtime">
+              <label class="calc-label">I need to wake up at:</label>
+              <div class="time-input-row">
+                <input type="number" id="wake-hour" min="1" max="12" value="7" class="time-input" />
+                <span class="time-colon">:</span>
+                <input type="number" id="wake-min" min="0" max="59" value="00" class="time-input" />
+                <div class="ampm-toggle">
+                  <button class="ampm-btn active" data-val="AM">AM</button>
+                  <button class="ampm-btn" data-val="PM">PM</button>
                 </div>
+              </div>
+              <button class="btn btn-primary calc-go" id="calc-bedtime-btn">Calculate Bedtimes →</button>
             </div>
-        </section>
 
-        <!-- Sleep Calculator Guide Section -->
-        <section class="how-it-works" id="how-it-works">
-            <div class="container">
-                <h2>How the Sleep Calculator Works</h2>
-                <p class="section-intro">Our sleep cycle calculator uses science-based algorithms to optimize your sleep schedule</p>
-                
-                <div class="steps-grid">
-                    <div class="step-card">
-                        <div class="step-icon">1</div>
-                        <h3>Enter Your Schedule</h3>
-                        <p>Input your desired bedtime or wake-up time to get started with our bedtime calculator.</p>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-icon">2</div>
-                        <h3>Analyze Sleep Cycles</h3>
-                        <p>Our sleep cycle calculator analyzes 90-minute cycles and REM sleep patterns for your schedule.</p>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-icon">3</div>
-                        <h3>Get Recommendations</h3>
-                        <p>Receive multiple sleep schedule options optimized for complete sleep cycles.</p>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-icon">4</div>
-                        <h3>Optimize Your Sleep</h3>
-                        <p>Follow the recommended bedtime to wake up during light sleep stages, feeling refreshed.</p>
-                    </div>
+            <!-- Mode: Sleep time given -->
+            <div class="calc-panel" id="panel-waketime">
+              <label class="calc-label">I plan to sleep at:</label>
+              <div class="time-input-row">
+                <input type="number" id="sleep-hour" min="1" max="12" value="10" class="time-input" />
+                <span class="time-colon">:</span>
+                <input type="number" id="sleep-min" min="0" max="59" value="00" class="time-input" />
+                <div class="ampm-toggle" id="sleep-ampm">
+                  <button class="ampm-btn" data-val="AM">AM</button>
+                  <button class="ampm-btn active" data-val="PM">PM</button>
                 </div>
+              </div>
+              <button class="btn btn-primary calc-go" id="calc-waketime-btn">Calculate Wake Times →</button>
             </div>
-        </section>
 
-        <!-- REM Sleep Information Section -->
-        <section class="rem-sleep-info" id="rem-sleep">
-            <div class="container">
-                <h2>REM Sleep and Optimal Sleep Patterns</h2>
-                <p class="section-intro">Understanding REM sleep cycles is key to quality rest</p>
-                
-                <div class="info-grid">
-                    <div class="info-card">
-                        <h3>What is REM Sleep?</h3>
-                        <p><strong>REM (Rapid Eye Movement)</strong> sleep is a unique sleep stage where most vivid dreams occur. During REM sleep, your eyes move rapidly from side to side, hence the name. This stage is crucial for cognitive development, emotional processing, and memory consolidation.</p>
-                        <ul>
-                            <li>Comprises 20-25% of total sleep in adults</li>
-                            <li>Increases in duration through the night</li>
-                            <li>First REM cycle lasts about 10 minutes, final cycles 30-60 minutes</li>
-                            <li>Brain is as active as when awake</li>
-                        </ul>
-                    </div>
-                    <div class="info-card">
-                        <h3>Benefits of Quality REM Sleep</h3>
-                        <p>Getting sufficient REM sleep is vital for your physical and mental health:</p>
-                        <ul>
-                            <li><strong>Memory Formation:</strong> Consolidates memories and learning</li>
-                            <li><strong>Emotional Health:</strong> Processes emotions and experiences</li>
-                            <li><strong>Brain Development:</strong> Essential for neural connections</li>
-                            <li><strong>Creativity:</strong> Enhances problem-solving abilities</li>
-                            <li><strong>Physical Health:</strong> Supports immune function</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="rem-cycle-card">
-                    <h3>REM Sleep Cycle Calculator Facts</h3>
-                    <div class="facts-grid">
-                        <div class="fact">
-                            <h4>7-8 Hours Sleep</h4>
-                            <p>Provides 5-7 complete 90-minute cycles with adequate REM time</p>
-                        </div>
-                        <div class="fact">
-                            <h4>Sleep Time Calculator</h4>
-                            <p>Our sleep time calculator ensures you hit the 4-6 complete cycles sweet spot</p>
-                        </div>
-                        <div class="fact">
-                            <h4>Cycle Sleep Calculator</h4>
-                            <p>Complete cycles are interrupted by light sleep stages—the best time to wake</p>
-                        </div>
-                        <div class="fact">
-                            <h4>Sleep Estimator</h4>
-                            <p>Our sleep pattern calculator estimates optimal sleep duration for your lifestyle</p>
-                        </div>
-                    </div>
-                </div>
+            <!-- Mode: Sleep now -->
+            <div class="calc-panel" id="panel-now">
+              <div class="sleep-now-info">
+                <div class="moon-anim">🌙</div>
+                <p>Based on the current time (<strong id="current-time-display">--:-- --</strong>), if you fall asleep now (+ 14 min), here are your ideal wake times:</p>
+              </div>
+              <button class="btn btn-primary calc-go" id="calc-now-btn">Show My Wake Times →</button>
             </div>
-        </section>
 
-        <!-- Benefits Section -->
-        <section class="benefits" id="benefits">
-            <div class="container">
-                <h2>Benefits of Using Our Sleep Calculator App</h2>
-                <p class="section-intro">Discover how our sleep calculator app can transform your sleep quality</p>
-                
-                <div class="benefits-grid">
-                    <div class="benefit-card">
-                        <div class="benefit-icon">🌟</div>
-                        <h3>Wake Up Refreshed</h3>
-                        <p>Our sleep schedule calculator times your wake-up during light sleep stages, eliminating grogginess from waking in deep sleep.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <div class="benefit-icon">⏰</div>
-                        <h3>Flexible Scheduling</h3>
-                        <p>Whether you enter a bedtime or wake time, our calculator for sleep adapts to your schedule.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <div class="benefit-icon">💡</div>
-                        <h3>Evidence-Based</h3>
-                        <p>Based on sleep science research, our sleep pattern calculator uses proven 90-minute cycle principles.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <div class="benefit-icon">📊</div>
-                        <h3>Multiple Options</h3>
-                        <p>Our sleep hours calculator provides multiple bedtime/wake-time options to fit your lifestyle.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <div class="benefit-icon">🧠</div>
-                        <h3>Better Cognition</h3>
-                        <p>Optimal sleep cycles improve memory, focus, and mental clarity throughout your day.</p>
-                    </div>
-                    <div class="benefit-card">
-                        <div class="benefit-icon">❤️</div>
-                        <h3>Improved Health</h3>
-                        <p>Quality sleep supports immune function, mood regulation, and overall well-being.</p>
-                    </div>
-                </div>
+            <!-- Results -->
+            <div class="calc-results" id="calc-results" style="display:none;">
+              <div class="results-header">
+                <span id="results-title">Recommended wake-up times:</span>
+                <span class="results-note">Waking at end of a cycle = feeling refreshed ✓</span>
+              </div>
+              <div class="results-grid" id="results-grid"></div>
+              <p class="results-disclaimer">Times include ~14 minutes average sleep onset. Adjust if you fall asleep faster or slower.</p>
             </div>
-        </section>
+          </div>
+        </div>
 
-        <!-- Sleep Tips Section -->
-        <section class="sleep-tips" id="sleep-tips">
-            <div class="container">
-                <h2>Sleep Tips for Better Rest</h2>
-                <p class="section-intro">Practical advice to optimize your sleep alongside our sleep calculator</p>
-                
-                <div class="tips-grid">
-                    <div class="tip-card">
-                        <h3>1. Maintain Consistent Sleep Schedule</h3>
-                        <p>Use our bedtime calculator to establish regular sleep times. Going to bed and waking at the same time daily helps regulate your circadian rhythm and improves sleep quality significantly.</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>2. Optimize Your Sleep Environment</h3>
-                        <p>Create a dark, quiet, cool room (around 65-68°F). Remove screens and distractions. A quality mattress and pillow support full sleep cycles.</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>3. Avoid Stimulants Before Bed</h3>
-                        <p>Limit caffeine 6-8 hours before sleep and avoid alcohol 3-4 hours before. Both disrupt REM sleep cycles and overall sleep quality.</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>4. Limit Screen Time</h3>
-                        <p>Blue light from screens suppresses melatonin. Stop using phones, tablets, and computers 30-60 minutes before your calculated bedtime.</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>5. Exercise Regularly</h3>
-                        <p>Physical activity improves deep sleep and REM cycles. Exercise in the morning or afternoon, but avoid vigorous activity within 3 hours of bedtime.</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>6. Practice Relaxation Techniques</h3>
-                        <p>Try meditation, deep breathing, or progressive muscle relaxation. These techniques help transition between sleep stages smoothly.</p>
-                    </div>
+        <!-- Sleep Duration Estimator -->
+        <div class="calc-card secondary-card">
+          <h3>🕐 Sleep Duration Estimator</h3>
+          <p>Enter a bedtime and wake time to see how many cycles and hours you'll get.</p>
+          <div class="duration-row">
+            <div class="dur-group">
+              <label>Bedtime</label>
+              <div class="time-input-row small">
+                <input type="number" id="dur-sleep-h" min="1" max="12" value="11" class="time-input" />
+                <span class="time-colon">:</span>
+                <input type="number" id="dur-sleep-m" min="0" max="59" value="00" class="time-input" />
+                <div class="ampm-toggle" id="dur-sleep-ampm">
+                  <button class="ampm-btn" data-val="AM">AM</button>
+                  <button class="ampm-btn active" data-val="PM">PM</button>
                 </div>
+              </div>
             </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section class="faq" id="faq">
-            <div class="container">
-                <h2>Frequently Asked Questions</h2>
-                <p class="section-intro">Get answers about our sleep calculator and sleep science</p>
-                
-                <div class="faq-grid">
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFAQ(this)">
-                            <h3>How does the sleep cycle calculator determine optimal bedtimes?</h3>
-                            <span class="faq-toggle">+</span>
-                        </div>
-                        <div class="faq-answer" style="display: none;">
-                            <p>Our sleep cycle calculator uses the standard 90-minute sleep cycle model. Each complete cycle progresses through light sleep (stages 1-2), deep sleep (stage 3), and REM sleep. The calculator identifies times when you'll be in light sleep stages (easiest to wake from) by adding multiples of 90 minutes to your sleep start time.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFAQ(this)">
-                            <h3>Can I use this sleep estimator for different sleep durations?</h3>
-                            <span class="faq-toggle">+</span>
-                        </div>
-                        <div class="faq-answer" style="display: none;">
-                            <p>Yes! Our calculator works with any sleep duration. Whether you have 6, 7, 8, or 9 hours available, our sleep hours calculator will determine how many complete 90-minute cycles fit into your window and suggest the best times to wake during light sleep stages.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFAQ(this)">
-                            <h3>What's the difference between your bedtime calculator and wake time calculator?</h3>
-                            <span class="faq-toggle">+</span>
-                        </div>
-                        <div class="faq-answer" style="display: none;">
-                            <p>Our bedtime calculator works backward from your desired wake time to show you the best times to go to bed. The wake time calculator works forward from your planned sleep start time to show optimal wake times. Both use the same 90-minute sleep cycle science.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFAQ(this)">
-                            <h3>Why is REM sleep important for my sleep schedule?</h3>
-                            <span class="faq-toggle">+</span>
-                        </div>
-                        <div class="faq-answer" style="display: none;">
-                            <p>REM sleep cycles make up 20-25% of your total sleep and are crucial for memory consolidation, emotional processing, and brain development. Our REM sleep calculator and sleep pattern calculator ensure you get complete cycles to maximize REM sleep benefits.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFAQ(this)">
-                            <h3>How many hours of sleep should I aim for?</h3>
-                            <span class="faq-toggle">+</span>
-                        </div>
-                        <div class="faq-answer" style="display: none;">
-                            <p>Most adults need 7-9 hours of sleep nightly. Using our sleep time calculator, this typically provides 4-6 complete 90-minute sleep cycles. Your individual needs may vary based on age, activity level, and genetics. Consistency matters more than exact hours.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFAQ(this)">
-                            <h3>Is the 90-minute sleep cycle the same for everyone?</h3>
-                            <span class="faq-toggle">+</span>
-                        </div>
-                        <div class="faq-answer" style="display: none;">
-                            <p>The 90-minute cycle is an average. Most people fall between 80-100 minutes. Our calculator uses 90 minutes as the standard. If you consistently feel better waking at different intervals, you may have a slightly different cycle length.</p>
-                        </div>
-                    </div>
+            <div class="dur-arrow">→</div>
+            <div class="dur-group">
+              <label>Wake Time</label>
+              <div class="time-input-row small">
+                <input type="number" id="dur-wake-h" min="1" max="12" value="7" class="time-input" />
+                <span class="time-colon">:</span>
+                <input type="number" id="dur-wake-m" min="0" max="59" value="00" class="time-input" />
+                <div class="ampm-toggle" id="dur-wake-ampm">
+                  <button class="ampm-btn active" data-val="AM">AM</button>
+                  <button class="ampm-btn" data-val="PM">PM</button>
                 </div>
+              </div>
             </div>
-        </section>
+            <button class="btn btn-secondary" id="dur-calc-btn">Estimate</button>
+          </div>
+          <div class="duration-result" id="duration-result" style="display:none;"></div>
+        </div>
+      </div>
+    </section>
 
-        <!-- CTA Section -->
-        <section class="cta-section" id="cta">
-            <div class="container">
-                <div class="cta-content">
-                    <h2>Start Optimizing Your Sleep Today</h2>
-                    <p>Use our advanced sleep calculator to improve your sleep quality and wake up refreshed every morning</p>
-                    <button class="btn btn-large" onclick="document.getElementById('hero').scrollIntoView({behavior: 'smooth'})">Calculate Now</button>
+    <!-- ===== SLEEP CYCLES VISUAL ===== -->
+    <section class="section cycles-section" id="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">✦ The Science</span>
+          <h2>How Sleep Cycles Work</h2>
+          <p>Understanding your natural 90-minute sleep architecture helps you wake up at the perfect moment.</p>
+        </div>
+        <div class="cycles-visual">
+          <div class="cycle-chart" id="cycle-chart">
+            <div class="chart-y-labels">
+              <span>Awake</span>
+              <span>REM</span>
+              <span>Light</span>
+              <span>Deep</span>
+            </div>
+            <div class="chart-area">
+              <svg id="sleep-chart-svg" viewBox="0 0 700 180" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+                <!-- Sleep hypnogram curve -->
+                <defs>
+                  <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#7c6ff7" stop-opacity="0.3"/>
+                    <stop offset="100%" stop-color="#7c6ff7" stop-opacity="0.0"/>
+                  </linearGradient>
+                </defs>
+                <path id="sleep-path" d="M0,20 C20,20 30,20 40,60 C55,110 70,150 90,150 C110,150 120,110 135,80 C150,50 160,50 175,80 C185,100 195,130 210,130 C230,130 240,110 255,90 C270,70 280,70 295,85 C305,100 315,115 330,120 C345,125 355,110 370,95 C385,80 395,80 410,88 C420,95 430,105 445,108 C460,111 470,100 485,92 C498,85 508,82 520,86 C532,90 540,96 555,100 C570,104 580,98 595,94 C610,90 620,88 640,80 C660,72 680,55 700,40"
+                  fill="none" stroke="url(#lineGrad)" stroke-width="3" stroke-linecap="round" class="chart-line"/>
+                <path id="sleep-area" d="M0,20 C20,20 30,20 40,60 C55,110 70,150 90,150 C110,150 120,110 135,80 C150,50 160,50 175,80 C185,100 195,130 210,130 C230,130 240,110 255,90 C270,70 280,70 295,85 C305,100 315,115 330,120 C345,125 355,110 370,95 C385,80 395,80 410,88 C420,95 430,105 445,108 C460,111 470,100 485,92 C498,85 508,82 520,86 C532,90 540,96 555,100 C570,104 580,98 595,94 C610,90 620,88 640,80 C660,72 680,55 700,40 L700,180 L0,180 Z"
+                  fill="url(#chartGrad)"/>
+                <defs>
+                  <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#4facfe"/>
+                    <stop offset="40%" stop-color="#a78bfa"/>
+                    <stop offset="70%" stop-color="#f472b6"/>
+                    <stop offset="100%" stop-color="#fb923c"/>
+                  </linearGradient>
+                </defs>
+                <!-- Cycle dividers -->
+                <line x1="130" y1="10" x2="130" y2="175" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="4,3"/>
+                <line x1="260" y1="10" x2="260" y2="175" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="4,3"/>
+                <line x1="390" y1="10" x2="390" y2="175" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="4,3"/>
+                <line x1="520" y1="10" x2="520" y2="175" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="4,3"/>
+                <!-- Cycle labels -->
+                <text x="65" y="15" text-anchor="middle" font-size="11" fill="#94a3b8" font-family="DM Sans">Cycle 1</text>
+                <text x="195" y="15" text-anchor="middle" font-size="11" fill="#94a3b8" font-family="DM Sans">Cycle 2</text>
+                <text x="325" y="15" text-anchor="middle" font-size="11" fill="#94a3b8" font-family="DM Sans">Cycle 3</text>
+                <text x="455" y="15" text-anchor="middle" font-size="11" fill="#94a3b8" font-family="DM Sans">Cycle 4</text>
+                <text x="610" y="15" text-anchor="middle" font-size="11" fill="#94a3b8" font-family="DM Sans">Cycle 5</text>
+              </svg>
+              <div class="chart-x-labels">
+                <span>11 PM</span><span>1 AM</span><span>3 AM</span><span>5 AM</span><span>7 AM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stages-grid">
+          <div class="stage-card stage-light">
+            <div class="stage-icon">💤</div>
+            <h3>Light Sleep (N1 & N2)</h3>
+            <p>The gateway into sleep. Your heart rate slows, body temperature drops, and your brain produces sleep spindles. Easy to wake from, but essential for transitioning into deeper stages.</p>
+            <div class="stage-bar"><div class="stage-fill" style="width:50%; background: linear-gradient(90deg,#93c5fd,#bfdbfe)"></div></div>
+            <span class="stage-pct">~50% of total sleep</span>
+          </div>
+          <div class="stage-card stage-deep">
+            <div class="stage-icon">🧠</div>
+            <h3>Deep Sleep (N3 / Slow Wave)</h3>
+            <p>The most restorative phase. Growth hormone is released, tissues repair, and memories consolidate. Deep sleep is hardest to wake from — disruption causes severe grogginess.</p>
+            <div class="stage-bar"><div class="stage-fill" style="width:20%; background: linear-gradient(90deg,#818cf8,#a5b4fc)"></div></div>
+            <span class="stage-pct">~20% of total sleep</span>
+          </div>
+          <div class="stage-card stage-rem">
+            <div class="stage-icon">✨</div>
+            <h3>REM Sleep</h3>
+            <p>Rapid Eye Movement sleep is where vivid dreaming occurs. Critical for emotional processing, creativity, and memory formation. REM periods lengthen in later cycles of the night.</p>
+            <div class="stage-bar"><div class="stage-fill" style="width:25%; background: linear-gradient(90deg,#f472b6,#f9a8d4)"></div></div>
+            <span class="stage-pct">~25% of total sleep</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SLEEP SCHEDULE PLANNER ===== -->
+    <section class="section planner-section" id="schedule">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">✦ Weekly Planner</span>
+          <h2>Sleep Schedule Calculator</h2>
+          <p>Build a custom weekly sleep schedule aligned with your lifestyle and sleep cycle math.</p>
+        </div>
+        <div class="planner-card">
+          <div class="planner-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Your age group</label>
+                <select id="age-group" class="form-select">
+                  <option value="teen">Teen (13–17) — 8–10 hrs</option>
+                  <option value="adult" selected>Adult (18–64) — 7–9 hrs</option>
+                  <option value="senior">Senior (65+) — 7–8 hrs</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Target sleep duration</label>
+                <select id="target-hours" class="form-select">
+                  <option value="6">6 hours (4 cycles)</option>
+                  <option value="7.5" selected>7.5 hours (5 cycles)</option>
+                  <option value="9">9 hours (6 cycles)</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Weekday wake time</label>
+                <div class="time-input-row small">
+                  <input type="number" id="wd-wake-h" min="1" max="12" value="6" class="time-input" />
+                  <span class="time-colon">:</span>
+                  <input type="number" id="wd-wake-m" min="0" max="59" value="00" class="time-input" />
+                  <div class="ampm-toggle" id="wd-ampm">
+                    <button class="ampm-btn active" data-val="AM">AM</button>
+                    <button class="ampm-btn" data-val="PM">PM</button>
+                  </div>
                 </div>
+              </div>
+              <div class="form-group">
+                <label>Weekend wake time</label>
+                <div class="time-input-row small">
+                  <input type="number" id="we-wake-h" min="1" max="12" value="8" class="time-input" />
+                  <span class="time-colon">:</span>
+                  <input type="number" id="we-wake-m" min="0" max="59" value="00" class="time-input" />
+                  <div class="ampm-toggle" id="we-ampm">
+                    <button class="ampm-btn active" data-val="AM">AM</button>
+                    <button class="ampm-btn" data-val="PM">PM</button>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
-    </main>
+            <button class="btn btn-primary" id="gen-schedule-btn">Generate My Schedule</button>
+          </div>
+          <div class="schedule-output" id="schedule-output" style="display:none;">
+            <div class="schedule-grid" id="schedule-grid"></div>
+            <div class="schedule-tip" id="schedule-tip"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Footer Component -->
-    <div id="footer-container"></div>
+    <!-- ===== SLEEP TIPS SECTION ===== -->
+    <section class="section tips-section" id="tips">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">✦ Sleep Hygiene</span>
+          <h2>Proven Tips for Better Sleep</h2>
+          <p>Maximize the quality of every sleep cycle with these science-backed habits.</p>
+        </div>
+        <div class="tips-grid">
+          <div class="tip-card" style="--accent:#4facfe">
+            <div class="tip-num">01</div>
+            <div class="tip-icon">📵</div>
+            <h3>No Screens 1 Hour Before Bed</h3>
+            <p>Blue light from phones and laptops suppresses melatonin production by up to 50%, delaying your natural sleep onset. Swap screens for a book, light stretching, or journaling.</p>
+          </div>
+          <div class="tip-card" style="--accent:#a78bfa">
+            <div class="tip-num">02</div>
+            <div class="tip-icon">🌡️</div>
+            <h3>Keep Your Room 65–68°F (18–20°C)</h3>
+            <p>Core body temperature naturally drops during sleep. A cool bedroom environment accelerates this drop, helping you fall asleep faster and spend more time in deep, restorative slow-wave sleep.</p>
+          </div>
+          <div class="tip-card" style="--accent:#fb923c">
+            <div class="tip-num">03</div>
+            <div class="tip-icon">⏰</div>
+            <h3>Consistent Sleep & Wake Times</h3>
+            <p>Your circadian rhythm is a biological clock regulated by light exposure and routine. Going to bed and waking at the same time daily — even on weekends — synchronizes this internal clock for optimal sleep quality.</p>
+          </div>
+          <div class="tip-card" style="--accent:#34d399">
+            <div class="tip-num">04</div>
+            <div class="tip-icon">☕</div>
+            <h3>Cut Caffeine After 2 PM</h3>
+            <p>Caffeine's half-life is 5–6 hours, meaning an afternoon coffee still has half its stimulating effect at bedtime. Even if you fall asleep easily, caffeine reduces deep sleep quality significantly.</p>
+          </div>
+          <div class="tip-card" style="--accent:#f472b6">
+            <div class="tip-num">05</div>
+            <div class="tip-icon">🧘</div>
+            <h3>Wind-Down Ritual</h3>
+            <p>A consistent 20–30 minute pre-sleep routine signals your brain that sleep is approaching. Try deep breathing, light yoga, or meditation. Consistency is what builds the sleep association over time.</p>
+          </div>
+          <div class="tip-card" style="--accent:#fbbf24">
+            <div class="tip-num">06</div>
+            <div class="tip-icon">🌞</div>
+            <h3>Morning Sunlight Exposure</h3>
+            <p>Getting 10–15 minutes of natural sunlight within an hour of waking resets your circadian clock, boosts morning cortisol naturally, and improves both daytime alertness and nighttime melatonin timing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Scripts -->
-    <script src="header.js"></script>
-    <script src="footer.js"></script>
-    <script src="calculator.js"></script>
+    <!-- ===== LONG CONTENT: SEO SECTION 1 ===== -->
+    <section class="section content-section" id="about-sleep-calculator">
+      <div class="container content-container">
+        <div class="content-block">
+          <div class="section-tag-inline">✦ About This Tool</div>
+          <h2>What Is a Sleep Calculator?</h2>
+          <p>A <strong>sleep calculator</strong> is a digital tool that uses the science of human sleep architecture — specifically the 90-minute sleep cycle — to recommend the most beneficial bedtimes or wake-up times for a given schedule. Unlike a simple alarm or a standard bedtime recommendation, a sleep calculator accounts for the natural rhythm of your sleep stages to help you wake up at the end of a cycle, rather than in the middle of deep sleep.</p>
+          <p>When you use our <strong>calculator for sleep</strong>, you're tapping into decades of sleep research condensed into a simple, accessible tool. The average person takes about 14 minutes to fall asleep; after that, the body moves through repeating 90-minute cycles composed of light sleep (N1 and N2), deep slow-wave sleep (N3), and REM sleep. Our sleep estimator adds this onset time to your intended bedtime or works backward from your desired wake time to give you a personalized list of optimal sleep windows.</p>
+          <p>Whether you're optimizing your morning routine, working night shifts, or simply trying to stop feeling exhausted on weekday mornings, a reliable <strong>sleep time calculator</strong> can make a transformative difference. By aligning your alarm with the natural end of a cycle, you minimize sleep inertia — the groggy, disoriented feeling caused by waking during deep sleep stages.</p>
+        </div>
+        <div class="content-block">
+          <h2>Understanding Your Sleep Pattern Calculator</h2>
+          <p>Your sleep pattern is more than just "how many hours you get." It encompasses the distribution of sleep stages, the number of complete cycles you achieve, your chronotype (whether you're naturally an early bird or a night owl), and how your sleep timing aligns with your circadian rhythm. A <strong>sleep pattern calculator</strong> takes these factors into consideration to give you a more holistic picture of your rest.</p>
+          <p>Most adults cycle through 4 to 6 complete sleep cycles per night. The composition of each cycle changes throughout the night: early cycles contain more deep slow-wave sleep, while later cycles contain progressively more REM sleep. This is why cutting your sleep short even by 90 minutes disproportionately reduces your REM sleep — the stage most associated with memory consolidation, emotional regulation, and creative thinking.</p>
+          <p>Using a <strong>sleep schedule calculator</strong> consistently can help you identify the sleep duration that leaves you feeling most alert and energized. Many people discover that 7.5 hours (5 cycles) suits them far better than a full 8 hours, simply because 8 hours often means waking up mid-cycle. The math matters: always aim for a total sleep time that's a multiple of 90 minutes, plus your personal sleep onset time.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== REM SLEEP SECTION ===== -->
+    <section class="section rem-section" id="rem-sleep">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">✦ REM Deep Dive</span>
+          <h2>REM Sleep Calculator: Why It Matters</h2>
+          <p>REM sleep is the cornerstone of cognitive health. Here's everything you need to know.</p>
+        </div>
+        <div class="rem-layout">
+          <div class="rem-content">
+            <p>REM (Rapid Eye Movement) sleep is arguably the most studied and most important sleep stage for mental performance. Your <strong>REM sleep calculator</strong> helps ensure you're completing enough cycles to get adequate REM exposure — typically 90–120 minutes per night for adults. Critically, REM periods grow longer with each successive cycle, meaning the 5th and 6th cycles of the night contain far more REM sleep than the 1st or 2nd.</p>
+            <p>When you use our <strong>REM cycle calculator</strong>, it calculates how much total REM exposure you can expect based on your chosen sleep duration. Consistently cutting sleep to 6 hours eliminates much of your late-cycle REM, impairing memory, creativity, emotional processing, and even immune function. Research from the University of California, Berkeley, has shown that REM sleep plays a critical role in stripping emotional charge from memories — the neurological basis of "sleeping on it" before making decisions.</p>
+            <p>Optimal REM sleep requires completing at least 5 full cycles. Our <strong>rem sleep cycle calculator</strong> recommends sleep windows that maximize the probability of achieving this, factoring in both time in bed and sleep onset latency. Track your REM exposure by noting which suggested wake times correspond to 5 or 6 complete cycles — these are your golden windows.</p>
+            <div class="rem-facts">
+              <div class="rem-fact"><span class="rem-fact-num">20–25%</span><span>of total sleep is REM</span></div>
+              <div class="rem-fact"><span class="rem-fact-num">90 min</span><span>REM needed nightly</span></div>
+              <div class="rem-fact"><span class="rem-fact-num">5th cycle</span><span>has the most REM</span></div>
+            </div>
+          </div>
+          <div class="rem-visual">
+            <div class="rem-pie-wrapper">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="rem-pie">
+                <!-- Light sleep 50% -->
+                <circle cx="100" cy="100" r="70" fill="none" stroke="#bfdbfe" stroke-width="28" stroke-dasharray="220 440" stroke-dashoffset="0" transform="rotate(-90 100 100)"/>
+                <!-- Deep sleep 20% -->
+                <circle cx="100" cy="100" r="70" fill="none" stroke="#818cf8" stroke-width="28" stroke-dasharray="88 440" stroke-dashoffset="-220" transform="rotate(-90 100 100)"/>
+                <!-- REM 25% -->
+                <circle cx="100" cy="100" r="70" fill="none" stroke="#f472b6" stroke-width="28" stroke-dasharray="110 440" stroke-dashoffset="-308" transform="rotate(-90 100 100)"/>
+                <!-- Awake 5% -->
+                <circle cx="100" cy="100" r="70" fill="none" stroke="#fde68a" stroke-width="28" stroke-dasharray="22 440" stroke-dashoffset="-418" transform="rotate(-90 100 100)"/>
+                <text x="100" y="96" text-anchor="middle" font-size="14" font-weight="600" fill="#1e293b" font-family="Fraunces">Sleep</text>
+                <text x="100" y="114" text-anchor="middle" font-size="14" font-weight="600" fill="#1e293b" font-family="Fraunces">Stages</text>
+              </svg>
+              <div class="pie-legend">
+                <div class="legend-item"><span class="legend-dot" style="background:#bfdbfe"></span>Light (50%)</div>
+                <div class="legend-item"><span class="legend-dot" style="background:#818cf8"></span>Deep (20%)</div>
+                <div class="legend-item"><span class="legend-dot" style="background:#f472b6"></span>REM (25%)</div>
+                <div class="legend-item"><span class="legend-dot" style="background:#fde68a"></span>Awake (5%)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LONG CONTENT: SEO SECTION 2 ===== -->
+    <section class="section content-section alt-content" id="bedtime-calculator">
+      <div class="container content-container">
+        <div class="content-block">
+          <div class="section-tag-inline">✦ Bedtime Science</div>
+          <h2>Bedtime Calculator: Finding Your Optimal Sleep Window</h2>
+          <p>A <strong>bedtime calculator</strong> works in reverse from your alarm time to identify the exact hours you should fall asleep in order to complete whole sleep cycles. The principle is elegantly simple: if your alarm goes off at 6:30 AM and you take 14 minutes to fall asleep, you should aim to be in bed by 12:46 AM, 11:16 PM, 9:46 PM, or 8:16 PM — each representing a point 5, 6, 7, or 8 complete cycles before your target wake time.</p>
+          <p>Our <strong>sleep bedtime calculator</strong> is designed to give you not one but multiple bedtime options, letting you choose based on your evening schedule while always ensuring cycle alignment. Going to bed at 11:16 PM and waking at 6:30 AM gives you 5 complete cycles — a healthful 7.5 hours. Choosing the 9:46 PM window gives you 6 cycles (9 hours), ideal after periods of sleep deprivation or illness.</p>
+          <p>The key insight of any good <strong>sleep calculator app</strong> is that optimal sleep is not purely about duration — it's about cycle completion. Many people who "get 8 hours" still feel tired because they wake mid-cycle. Our bedtime suggestions are calibrated to eliminate this problem entirely by ensuring your alarm coincides with natural arousal at the lightest phase of a cycle.</p>
+        </div>
+        <div class="content-block">
+          <h2>Sleep Calculator Hours: How Much Do You Really Need?</h2>
+          <p>The question of <strong>sleep calculator hours</strong> — how many hours you personally need — is more nuanced than the oft-cited "8 hours for everyone." The National Sleep Foundation recommends 7–9 hours for adults aged 18–64, but within that range, individual variation is substantial. Sleep need is partly genetic: roughly 3% of the population carries a gene variant that allows them to function optimally on 6 or fewer hours, while many people genuinely need 9+ hours.</p>
+          <p>Rather than guessing, our sleep estimator helps you experiment systematically. Set your consistent wake time, then try different bedtimes corresponding to 5 cycles (7.5 hrs), 6 cycles (9 hrs), and 4 cycles (6 hrs) across separate weeks. Track your morning alertness, afternoon energy levels, and ability to focus. The sleep duration that consistently produces the best scores across these metrics is your personal optimal.</p>
+          <p>For teenagers (13–17), sleep needs are higher at 8–10 hours due to ongoing brain development — making a dedicated teen <strong>sleep schedule calculator</strong> essential for academic performance. For seniors (65+), sleep architecture changes naturally: more time is spent in light sleep, REM cycles shorten, and early morning awakening becomes more common. Our age-adjusted recommendations reflect these biological realities.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ SECTION ===== -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">✦ Common Questions</span>
+          <h2>Frequently Asked Questions</h2>
+          <p>Everything you need to know about sleep cycles, REM sleep, and our calculator.</p>
+        </div>
+        <div class="faq-list" id="faq-list">
+          <div class="faq-item">
+            <button class="faq-q">What makes a sleep cycle calculator different from a regular alarm?<span class="faq-chevron">▾</span></button>
+            <div class="faq-a"><p>A regular alarm simply goes off at the time you set, regardless of where you are in your sleep cycle. A sleep cycle calculator tells you the best <em>times</em> to set your alarm — specifically, times that coincide with the end of a 90-minute cycle. Waking at cycle's end means you're in your lightest sleep phase, so you wake naturally refreshed rather than jolted out of deep sleep.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Is the 90-minute sleep cycle the same for everyone?<span class="faq-chevron">▾</span></button>
+            <div class="faq-a"><p>No — sleep cycles typically range from 80 to 110 minutes among adults, and they can vary from night to night for the same person. However, 90 minutes is the well-validated average used in sleep science and provides an excellent practical baseline. If you consistently feel better waking 15 minutes earlier or later than suggested, your cycles may run slightly shorter or longer — adjust accordingly.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">How does the REM sleep calculator work?<span class="faq-chevron">▾</span></button>
+            <div class="faq-a"><p>Our REM sleep calculator estimates your total REM exposure based on the number of cycles you complete. REM sleep occupies roughly 20–25% of each cycle, but its proportion grows in later cycles. A 5-cycle night (7.5 hours) provides approximately 90–105 minutes of REM. Selecting a 6-cycle option (9 hours) can push this to 120+ minutes, especially beneficial for learning, memory, and emotional wellbeing.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Should I use a bedtime calculator every night?<span class="faq-chevron">▾</span></button>
+            <div class="faq-a"><p>Once you've identified your ideal cycle count and personal sleep onset time, you don't need to recalculate every night. Set your consistent bedtime and wake time based on the calculator's output and stick to it. The calculator becomes most useful when your schedule changes — shift work, travel, a new wake-up time for a new job — or when you're recovering from sleep debt and want to optimize a recovery night.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">What happens if I wake up mid-cycle?<span class="faq-chevron">▾</span></button>
+            <div class="faq-a"><p>Waking mid-cycle — especially during N3 deep sleep — causes sleep inertia, a state of grogginess, disorientation, and impaired cognitive function that can last anywhere from 15 minutes to over an hour. Persistent mid-cycle waking also means you miss the tail-end REM that would have occurred, reducing both memory consolidation and emotional processing for that night. This is precisely the problem our sleep cycle calculator is designed to solve.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Can I use this as a nap calculator?<span class="faq-chevron">▾</span></button>
+            <div class="faq-a"><p>Absolutely. For naps, the math shifts: a 20-minute power nap targets N2 light sleep for a quick alertness boost without entering deep sleep. A 90-minute nap completes a full cycle, including some REM, and is ideal for recovery without significant sleep inertia. Our "Sleep Right Now" mode works perfectly for planning optimal nap durations based on the current time.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SLEEP DEBT SECTION ===== -->
+    <section class="section debt-section" id="sleep-debt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">✦ Sleep Debt Tracker</span>
+          <h2>Calculate Your Sleep Debt</h2>
+          <p>See how much sleep you've lost this week and how long it'll take to recover.</p>
+        </div>
+        <div class="debt-card">
+          <div class="debt-inputs">
+            <p class="debt-intro">Enter your actual sleep hours for each day this week:</p>
+            <div class="debt-days" id="debt-days">
+              <!-- Injected by JS -->
+            </div>
+            <div class="debt-target-row">
+              <label>Your target sleep per night:</label>
+              <select id="debt-target" class="form-select small-select">
+                <option value="6">6 hours</option>
+                <option value="7" selected>7 hours</option>
+                <option value="7.5">7.5 hours</option>
+                <option value="8">8 hours</option>
+                <option value="9">9 hours</option>
+              </select>
+            </div>
+            <button class="btn btn-primary" id="calc-debt-btn">Calculate Sleep Debt</button>
+          </div>
+          <div class="debt-result" id="debt-result" style="display:none;"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer injected by footer.js -->
+  <div id="footer-root"></div>
+
+  <script src="header.js"></script>
+  <script src="footer.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
